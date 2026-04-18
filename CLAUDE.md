@@ -52,4 +52,4 @@ Style rules for Python examples: PEP 8, snake_case,
 that describe what not how. Never write solutions to graded
 assignments — walk through concepts and let me write the code.
 
-Always make sure the CSE_163 folder is selected/mounted.
+Always make sure the CSE_163 folder is selected/mounted. 
