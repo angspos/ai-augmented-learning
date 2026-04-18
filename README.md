@@ -7,16 +7,29 @@ A personal experiment in using agentic AI as a study partner — with guardrails
 
 This repo is the knowledge system I built for **UW CSE 163 (Intermediate Data Programming)**. It pairs an Obsidian knowledge graph with a scope-constrained agentic AI (Claude), governed by a project spec (`CLAUDE.md`) that tells the AI how to behave: stay inside the course, cite every claim, follow my note conventions, and update the vault as I learn.
 
-The interesting part isn't the notes. It's the **system design** — the constraints that make the AI verifiable instead of vibes-based.
+The interesting part is the **system design** — the constraints that make the AI verifiable instead of vibes-based.
+
+---
+
+## Origin
+
+At **Boeing Defense** and **Boeing Space**, I built onboarding wikis for new engineers. In environments defined by legacy systems and proprietary information, a centralized knowledge hub compresses weeks of tribal knowledge into something a newcomer can actually navigate.
+
+By Spring 2026, UW had given the green light to AI in coursework, and employers were shifting from permitting AI to *requiring and tracking* its use. Fluency with **agentic AI** was becoming a baseline expectation. I decided to treat agentic AI the same way — not as an oracle, but as a colleague working from an authoritative knowledge base.
+
+I built on Andrej Karpathy's [**LLM Wiki**](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) pattern, adding two things:
+
+- **Course-specific guardrails** — scope constraints, citation discipline, and academic-honesty limits (walks through concepts, never writes graded solutions).
+- **A personalized growth loop** — the system reads across chat threads to detect recurring struggles, then *promotes* those concepts into a dedicated **growth** section that's forced into the AI's context on every response. The AI becomes an active study partner with cross-session memory of where I need the most work.
 
 ---
 
 ## Why I built it
 
-Most AI study tools hand you plausible-sounding answers with no way to check them. That's fine for brainstorming and terrible for learning. I wanted a system where:
+Most AI study tools hand you plausible-sounding answers with no way to check them, which is terrible for learning. I wanted a system where:
 
 - Every answer is **traceable back to a source** I can verify (a lecture timestamp, a lesson page, a concept note I wrote, an Ed Discussion thread)
-- The AI **refuses to hallucinate past the curriculum** — if the class hasn't covered a Python feature yet, it tells me so instead of filling in from general knowledge
+- The AI **refuses to hallucinate past the curriculum** — if the class hasn't covered a Python feature yet, it tells me so instead of filling in from general knowledge. Because the AI is also forced to cite course material for every claim, I've noticed significantly fewer hallucinations in practice
 - My notes are **a knowledge graph**, not a linear document — so the AI can link new material into what I already know instead of re-explaining from scratch
 - The system **learns my conventions** (tag vocabulary, wikilink style, frontmatter) and extends them rather than inventing new ones
 
