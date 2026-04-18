@@ -39,9 +39,9 @@ Most AI study tools hand you plausible-sounding answers with no way to check the
                   │
                   ▼
             CLAUDE.md (project spec)
-            .auto-memory/ (persistent context about me + the project)
+            .auto-memory/ (persistent context about me + the course)
 
-- **Obsidian vault** — interlinked markdown notes organized by concept, lecture, and lesson. Wikilinks form a graph; the graph view shows concept clusters.
+- **Obsidian VAULT** — interlinked markdown notes organized by concept, lecture, and lesson. Wikilinks form a graph; the graph view shows concept clusters.
 - **Claude** — agentic AI with file access to the vault. Reads notes, writes new notes, updates existing ones, answers questions.
 - **`CLAUDE.md`** — the project spec. The most important file in this repo. It defines the rules the AI operates under every session.
 - **Memory files** — persistent context about me (role, project state, feedback patterns) that carries across sessions so the AI doesn't start from zero each time.
