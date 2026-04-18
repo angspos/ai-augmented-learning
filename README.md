@@ -5,17 +5,15 @@ Personal Obsidian wiki + agentic AI study partner with citation and scope guardr
 
 A personal experiment in using agentic AI as a study partner — with guardrails.
 
-This repo is the knowledge system I built for **UW CSE 163 (Intermediate Data Programming)**. It pairs an Obsidian knowledge graph with a scope-constrained agentic AI (Claude), governed by a project spec (`CLAUDE.md`) that tells the AI how to behave: stay inside the course, cite every claim, follow my note conventions, and update the vault as I learn.
-
-The interesting part is the **system design** — the constraints that make the AI verifiable instead of vibes-based.
+This repo is the knowledge system I built for **UW CSE 163 (Intermediate Data Programming)**. It pairs an Obsidian knowledge wiki (also called the VAULT) with a scope-constrained agentic AI (Claude), governed by a project spec (`CLAUDE.md`) that tells the AI how to behave: stay inside the course, cite every claim, follow my note conventions, and update the vault as I learn.
 
 ---
 
 ## Origin
 
-At **Boeing Defense** and **Boeing Space**, I built onboarding wikis for new engineers. In environments defined by legacy systems and proprietary information, a centralized knowledge hub compresses weeks of tribal knowledge into something a newcomer can actually navigate.
+At **Boeing Defense** and **Boeing Space**, I built onboarding wikis for new engineers. In environments defined by legacy systems and proprietary information, a centralized knowledge hub/wiki compresses weeks of tribal knowledge into something a newcomer can actually navigate.
 
-By Spring 2026, UW had given the green light to AI in coursework, and employers were shifting from permitting AI to *requiring and tracking* its use. Fluency with **agentic AI** was becoming a baseline expectation. I decided to treat agentic AI the same way — not as an oracle, but as a colleague working from an authoritative knowledge base.
+By Spring 2026, UW had given the green light to AI in coursework, and employers are shifting from permitting AI to *requiring and tracking* its use. Fluency with **agentic AI** is becoming a baseline expectation. I decided to treat agentic AI the same way — not as an oracle, but as a colleague working from an authoritative knowledge base (aka the VAULT).
 
 I built on Andrej Karpathy's [**LLM Wiki**](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) pattern, adding two things:
 
