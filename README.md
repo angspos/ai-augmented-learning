@@ -37,7 +37,7 @@ Most AI study tools hand you plausible-sounding answers with no way to check the
 
 ## Architecture
 
-    Me  ⇄  Claude (agentic AI)  ⇄  Obsidian vault (knowledge graph)
+    Me  ⇄  Claude (agentic AI)  ⇄  Obsidian ML-COURSE-VAULT.md (knowledge wiki)
                   │
                   ▼
             CLAUDE.md (project spec)
