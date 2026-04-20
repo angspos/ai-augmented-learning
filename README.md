@@ -15,13 +15,13 @@ This repo is the knowledge system I built for **UW CSE 163 (Intermediate Data Pr
 
 As an intern at **Boeing Defense** (2023) and **Boeing Space** (2024), I built onboarding wikis for new engineers. In environments defined by legacy systems and proprietary information, a centralized knowledge hub/wiki compresses weeks of tribal knowledge into something a newcomer can navigate.
 
-By Spring 2026, UW had given the green light to AI in coursework. Simultaneously, employers began shifting from permitting AI to *requiring and tracking* its use. Fluency with **agentic AI** is becoming a baseline expectation. I decided to treat agentic AI as a colleague working from an authoritative knowledge base (aka the VAULT).
+As of Spring 2026, my university has given the green light to AI in coursework. Simultaneously, employers are shifting from permitting AI to *requiring and tracking* its use. Fluency with **agentic AI** is becoming a baseline expectation. I decided to treat agentic AI as a colleague working from an authoritative knowledge base (aka the VAULT).
 
 I built on Andrej Karpathy's [**LLM Wiki**](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) pattern, adding:
 
 - **Course-specific guardrails** — scope constraints, citation discipline, and academic-honesty limits (walks through concepts, never writes graded solutions).
 - **A personalized growth loop** — the system reads across chat threads to detect recurring struggles, then *promotes* those concepts into a dedicated **growth** section that's forced into the AI's context on every response. The AI becomes an active study partner with cross-session memory of where I need the most work.
-- **Forced Citations** (see below)
+- **Forced citations** (see below)
 
 ---
 
@@ -72,7 +72,7 @@ AI cannot drift away from these guardrails — they're enforced every response.
 - **Feedback loops allow for tailored learning.** Every chat with AI, allows the VAULT to grow in those particular subjects. The VAULT becomes most dense in the areas I struggle with the most.
 - **Scope constraints outperform knowledge injection.** Telling the AI "don't use Python features the class hasn't covered" produced more useful, course-aligned help than feeding it the textbook would have.
 - **Memory decouples sessions from context.** The memory system lets the AI pick up where we left off without re-explaining who I am or what I'm working on.
-- **Tackles gaps in understanding on two fronts.** By having the forced citation, and prompting when we should add more to those subjects/concepts, and by having a weekly review of all concepts to promote etc. We effectively use two models working together to help fill gaps in understanding. Allowing equity for all students.
+- **Gaps get caught twice.** Forced citation catches them live; scheduled weekly review catches the rest. You no longer have to know what you don't know.
 
 ---
 
