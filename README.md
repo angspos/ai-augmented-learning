@@ -7,7 +7,7 @@ A personal experiment in using agentic AI as a study partner — with guardrails
 
 This repo is the knowledge system I built for **UW CSE 163 (Intermediate Data Programming)**. It pairs an Obsidian knowledge wiki (also called the VAULT) with a scope-constrained agentic AI (Claude), governed by a project spec (`CLAUDE.md`) that tells the AI how to behave: stay inside the course, cite every claim, follow my note conventions, and update the vault as I learn.
 
-**The VAULT grows according to how you interact with Agentic AI.** It tailors *your* learning style, gaps in *your* understanding, all within the in the framework of the course material and lectures.**
+**The VAULT grows according to how you interact with Agentic AI.** It tailors *your* learning style, gaps in *your* understanding, all within the in the framework of the course material and lectures.
 
 --- 
 
